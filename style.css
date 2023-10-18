@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: #eeeeee;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(to top, #2e97a7, #eeeeee);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  height: 700px;
+  width: 550px;
+  background: linear-gradient(to bottom, #1aacac, #176b87);
+  border-style: none;
+  border-radius: 5% 5% 20% 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* inner container  */
+.inner-container {
+  width: 90%;
+  height: 90%;
+  /* border-radius: 5% 5% 20% 5%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  margin-top: 20px;
+}
+
+/* input  */
+.input {
+  margin-top: 10px;
+}
+input[type="text"] {
+  height: 30px;
+  border: 1px solid #eeeeee;
+  background-color: #2e97a7;
+  border-radius: 20px;
+  text-align: center;
+}
+
+input::placeholder {
+  color: #eeeeee;
+}
+
+/* buttons  */
+button {
+  border-radius: 20px;
+  border: 1px solid #eeeeee;
+  background-color: #2e97a7;
+}
+.addBtn {
+  margin-left: 10px;
+  height: 30px;
+  width: 50px;
+}
+
+.removeCheckedBtn {
+  margin-top: auto;
+  margin-bottom: 20px;
+  height: 30px;
+  width: 200px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgb(67, 194, 219);
+}
+
+/* to do  */
+.to-do-list {
+  width: 80%;
+  margin-top: 30px;
+  overflow: auto;
+}
+.to-do-item {
+  display: flex;
+  margin-top: 10px;
+}
+
+.to-do-item input[type="checkbox"] {
+  margin-right: 20px;
+}
+
+/* Style the text when the checkbox is checked */
+.checkbox:checked + .to-do-text {
+  text-decoration: line-through;
+}
+@media screen and (max-width: 620px) {
+  .container {
+    width: 90%;
+    height: 600px;
+    border-radius: 30px 30px 110px 30px;
+  }
+}
